@@ -1,0 +1,139 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reet Enterprise</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/PageViewNavigation/component.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <form id="form1" runat="server" defaultbutton="SubmitButton">
+        <div id="perspective" class="perspective effect-airbnb">
+            <div class="bannercontainer">
+                <div class="wrapper">
+                    <!-- wrapper needed for scroll -->
+                    <div>
+                        <header id="header" style="position: relative; z-index: 1; background-color: rgba(0, 0, 0, 0.31);">
+                            <div class="header-bottom">
+                                <!--header-bottom-->
+                                <div class="container">
+                                    <div class="row" style="margin-right: -150px;">
+                                        <div class="col-sm-1">
+                                            <div class="mainmenu pull-left">
+                                                <ul class="nav navbar-nav collapse navbar-collapse">
+                                                    <li>
+                                                        <a href="index.aspx" id="showMenu" style="">
+                                                            <i class="fa fa-bars" style="color: white; background-color: #005049;"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="pull-right">
+                                                <div class="navbar-form navbar-left" role="search">
+                                                    <div class="form-group">
+                                                        <asp:TextBox class="form-control" Style="float: left !important" ID="txtSearch" runat="server" placeholder="Products Name"></asp:TextBox>
+                                                    </div>
+                                                    <asp:Button class="btn btn-warning" ID="SubmitButton" runat="server" Text="Search" OnCommand="SubmitButton_Click"/>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-1">
+                                            <div class="social-networks">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"><i class="fa fa-facebook-square"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa fa-twitter-square"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--/header-bottom-->
+
+                        </header>
+                        <!--/header-->
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                        <footer id="footer">
+                            <!--Footer-->
+                            <div class="footer-bottom">
+                                <div class="container">
+                                    <div class="row">
+                                        <p class="pull-left">Copyright © 2016 Reet Enterprise. All rights reserved |</p>
+                                        <p class="pull-right">Design & Developed by <span><a target="_blank" href="#">Reet Enterprise</a></span></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </footer>
+                        <!--/Footer-->
+                    </div>
+
+                </div>
+            <!-- wrapper -->
+        </div>
+        <!-- /bannercontainer -->
+        <nav class="outer-nav left vertical">
+            <div class="container">
+                <div class="col-sm-6">
+                    <h2 class="title reet_title text-center">Reet Enterprise Welcomes you</h2>
+                </div>
+            </div>
+            <a href="index.aspx"><i class="fa fa-home pr"></i>Home</a>
+            <a href="product-category.aspx"><i class="fa fa-heart pr"></i>Products</a>
+            <a href="contact-us.aspx"><i class="fa fa-phone pr"></i>Contact</a>
+            <asp:LinkButton ID="lbtncart" runat="server" OnCommand="Unnamed_Command">
+                    <i class="fa fa-shopping-cart pr"></i>Cart</asp:LinkButton>
+            <asp:LinkButton ID="lbtnlogin" runat="server" OnCommand="Unnamed_Command1">
+                    <i class="fa fa-lock pr"></i>Login</asp:LinkButton>
+           
+            
+            <!--Admin Controls  -->
+            <asp:LinkButton ID="lbtnUser" OnCommand="Unnamed_Command5" runat="server"  Visible="False" >
+                <asp:Image ID="imguser" runat="server" Style="width: 40px; height: 40px; border-radius: 100%; margin:0 10px 0 175px" />
+                <asp:Label ID="lblUser" runat="server" />
+            </asp:LinkButton>
+             <asp:LinkButton ID="lbtnlog" runat="server" OnCommand="Unnamed_Command4" Visible="False">
+                    <i class="fa fa-lock pr"></i>Logout</asp:LinkButton>
+             <asp:LinkButton ID="lbtnbanner" runat="server" Visible="False" OnCommand="lbtnBanner_Command">
+                 <i class="fa fa-plus-square-o pr"></i>Banner</asp:LinkButton>
+            <asp:LinkButton ID="lbtnCate" runat="server" Visible="False" OnCommand="lbtnCate_Command">
+                 <i class="fa fa-plus-square-o pr"></i>Category</asp:LinkButton>
+            <asp:LinkButton ID="lbtnProd" runat="server" Visible="False" OnCommand="lbtnProd_Command" >
+                    <i class="fa fa-pinterest-square pr"></i>Product</asp:LinkButton>
+            <asp:LinkButton ID="lbtnuserCart" runat="server" Visible="False" OnCommand="lbtnuserCart_Command">
+                <i class="fa fa-shopping-cart pr"></i>Cart</asp:LinkButton>
+
+        </nav>
+        </div><!-- /perspective -->
+    </form>
+
+   <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   
+
+    <script src="js/PageViewNavigation/classie.js"></script>
+    <script src="js/PageViewNavigation/modernizr.custom.25376.js"></script>
+    <script src="js/PageViewNavigation/menu.js"></script>
+
+</body>
+</html>

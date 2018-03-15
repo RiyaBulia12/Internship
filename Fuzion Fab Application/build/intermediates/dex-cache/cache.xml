@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\DELL\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Users\DELL\Desktop\Workspace\ProgressedInternshipApp\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-864efc004f649da7a577c1576517098bc4cbee79.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Workspace\ProgressedInternshipApp\app\libs\volley.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="C:\Users\DELL\Desktop\Workspace\ProgressedInternshipApp\app\build\intermediates\pre-dexed\debug\volley-248bb25ef6b9caa5f3a3009c67f954fdb9212607.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.4\a60a5e993c98c864010053cb901b7eab25306568\gson-2.2.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="C:\Users\DELL\Desktop\Workspace\ProgressedInternshipApp\app\build\intermediates\pre-dexed\debug\gson-2.2.4-aa6d871faa38bccf688757c06a25b436b265dc0e.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Workspace\ProgressedInternshipApp\app\build\intermediates\exploded-aar\ProgressedInternshipApp\library\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7a61a8c0cc85cc0bc3929058b33cd6d3641810c1">
+        <dex dex="C:\Users\DELL\Desktop\Workspace\ProgressedInternshipApp\app\build\intermediates\pre-dexed\debug\classes-fc92cc04f525397a59dbca2422aa2b6d0517db21.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Workspace\ProgressedInternship\app\build\intermediates\exploded-aar\ProgressedInternship\library\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="59d02b88c648a3bede3ce455b93a9c66c595795c">
+        <dex dex="C:\Users\DELL\Desktop\Workspace\ProgressedInternship\app\build\intermediates\pre-dexed\debug\classes-e2faaf6455591b22c913e5f1591d6f7af7ef291f.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Workspace\ProgressedInternship\app\libs\volley.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="C:\Users\DELL\Desktop\Workspace\ProgressedInternship\app\build\intermediates\pre-dexed\debug\volley-c639e25625bc117f7b9843536e2c3291ff7dd080.jar" />
+    </item>
+
+</items>

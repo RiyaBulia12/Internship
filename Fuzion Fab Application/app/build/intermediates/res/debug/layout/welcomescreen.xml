@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlws"
+    android:background="#ffffff"
+    android:gravity="center"
+    tools:context="com.example.internship.Welcomescreen" >
+
+    
+    <ViewFlipper
+        android:id="@+id/flipper1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:flipInterval="3000"
+        android:inAnimation="@anim/slide_in_right"
+        android:outAnimation="@anim/slide_out_left" >
+
+        <ImageView
+            android:id="@+id/banner1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/welcme" />
+
+    </ViewFlipper>
+    
+     <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="5"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:alpha="0.7"
+                android:background="#ffffff"
+                android:onClick="btn_signup"
+                android:text="Sign Up"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            
+		    <Button
+		        android:id="@+id/btn_skip"
+		       android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="5"
+		        android:layout_margin="@dimen/activity_horizontal_margin"
+                android:alpha="0.7"
+                android:background="#ffffff"
+		        android:onClick="btn_skip"
+		        android:text="Skip" 
+		        android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+		
+		</LinearLayout>
+		
+      <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_above="@+id/linearLayout1"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="#E85663"
+            android:onClick="btn_signin"
+            android:text="Already have an account? Sign in"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+     
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/DELL/Desktop/Workspace/ProgressedInternshipApp/app/src/main/res/layout/welcomescreen.xml -->

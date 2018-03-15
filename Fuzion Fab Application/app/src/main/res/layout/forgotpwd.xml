@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:id="@+id/fpwd"
+    android:orientation="vertical"
+    tools:context="com.example.internship.Forgotpwd"  
+    xmlns:app="http://schemas.android.com/apk/res/com.example.internship">
+
+     <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp" 
+        style="@style/formLinearlayout" >
+         <EditText
+            android:id="@+id/email"
+            style="@style/formEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/drawable_rounded"
+            android:hint="Enter your Email address"
+            android:inputType="textEmailAddress" />        
+     </LinearLayout>
+
+     <Button
+         android:id="@+id/btn_resetpwd"
+       	 style="@style/formButton"
+         android:layout_width="276dp"
+         android:layout_height="50dp"
+         android:background="@drawable/drawable_shape"
+         android:onClick="login"
+         android:text="Reset Password"/>
+
+</LinearLayout>

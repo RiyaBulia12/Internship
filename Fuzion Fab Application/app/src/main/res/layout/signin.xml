@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:id="@+id/llsi"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.internship.Signin" 
+    xmlns:app="http://schemas.android.com/apk/res/com.example.internship">
+
+   <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:id="@+id/linearlayout2"
+        style="@style/formLinearlayout" >
+       <EditText
+           	android:id="@+id/si_username"
+           	android:layout_width="match_parent"
+   			android:layout_height="match_parent"
+   			style="@style/formEdittext"
+            android:background="@drawable/drawable_rounded"
+            android:hint="@string/username"
+            android:inputType="text"
+            android:drawableRight="@drawable/ic_action_person"/>
+   </LinearLayout>
+   
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        style="@style/formLinearlayout" >
+        <EditText
+            android:id="@+id/si_pwd"
+            android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+            style="@style/formEdittext"
+            android:inputType="textPassword"
+            android:hint="@string/password"  
+            android:background="@drawable/drawable_rounded"
+            android:drawableRight="@drawable/ic_action_accounts"/>
+    </LinearLayout>
+    
+     <Button
+        android:layout_width="276dp"
+    	android:layout_height="50dp"
+        android:id="@+id/btn_login"
+        style="@style/formButton"
+        android:background="@drawable/drawable_shape"
+        android:onClick="login"
+        android:text="@string/login" />
+    
+     <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="7dp"
+        style="@style/formLinearlayout" 
+        android:orientation="horizontal" >
+         <TextView
+            android:id="@+id/forgot_pwd"
+            android:layout_width="wrap_content"
+    		android:layout_height="match_parent"
+            style="@style/formTextview"
+            android:onClick="tv_forgot_pwd"
+            android:text="@string/forgot_pwd" 
+            android:layout_marginRight="25dp" />
+         <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+    		android:layout_height="match_parent"
+    		style="@style/formTextview" 
+            android:text="|" 
+            android:layout_marginRight="25dp"/>
+
+         <TextView
+             android:id="@+id/signup"
+             style="@style/formTextview"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:onClick="tv_create_acc"
+             android:text="@string/signup" />
+
+     </LinearLayout>
+
+</LinearLayout>

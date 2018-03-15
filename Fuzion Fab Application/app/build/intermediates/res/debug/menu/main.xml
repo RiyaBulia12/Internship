@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.progressedinternship.MainActivity" >
+
+     <!-- Cart, should appear as action button -->
+    <item android:id="@+id/action_cart"
+          android:icon="@drawable/ic_cart"
+          android:title="@string/app_name"
+          android:showAsAction="ifRoom" />
+</menu>
+<!-- From: file:/C:/Users/DELL/Desktop/Workspace/ProgressedInternshipApp/app/src/main/res/menu/main.xml -->
